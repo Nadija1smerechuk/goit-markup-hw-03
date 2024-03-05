@@ -66,8 +66,7 @@ font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
 }
 
 .partlogo-studio{
@@ -230,6 +229,9 @@ color: #404bbf;
     gap: 24px;
 }
 
+.benefits-item{
+    width: calc((100% - 72px) / 4);
+}
 
 .section-title {
     font-weight: 700;
@@ -273,7 +275,7 @@ margin-bottom: 8px;
     
 }
 
-.team-conten{
+.team-content{
     padding: 32px 0;
 }
 
@@ -290,8 +292,9 @@ margin-bottom: 8px;
 
 
 
-.team-list-icon{
+.team-list-item{
     border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
 }
 
 
@@ -304,10 +307,6 @@ margin-bottom: 8px;
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 72px;
-}
-
-.team-list-item{
-    background-color: #FFFFFF;
 }
 
 .team-list {
@@ -323,11 +322,10 @@ margin-bottom: 8px;
 
 /* <!-- Sektion-4--> */
 
-.Portfolio {
+.portfolio {
     display: flex;
-    padding-top: 120px;
+padding-top: 120px;
     padding-bottom: 120px;
-
 }
 
 
