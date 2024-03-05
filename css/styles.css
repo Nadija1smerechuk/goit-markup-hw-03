@@ -4,22 +4,63 @@ body {
     background-color: #fff;
     }
 
+* {
+    box-sizing: border-box;
+    }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+style {
+    display: flex;
+    align-items: center;
+}
+
+
+/* <!-- heder --> */
+
 
 .logo{
 font-family: "Raleway", sans-serif;
-font-weight: 700;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #4d5ae5;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .partlogo-studio{
@@ -37,16 +78,30 @@ color: #4d5ae5;
     color: #404bbf;
 }
 
+.menu {
+    align-items: center;
+    display: flex;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 
 
 
-
-.nav-link{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #2e2f42;
+.nav-link {
+    background: #fff;
+    color: #434455;
+    margin-right: 40px;
+    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -74,11 +129,31 @@ color: #2e2f42;
 color: #404bbf;
 }
 
+.menu-address {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.address-link {
+    background: #fff;
+    color: #434455;
+    margin-right: 40px;
+    text-decoration: none;
+}
 
 
+/* <!-- Sektion-1 --> */
 
+.hero-wrap {
+    max-width: 496px;
+    margin: 0, auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 188px;
+    margin: 0 auto;
+}
 
-.hero-title{
+.hero-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 56px;
@@ -86,13 +161,16 @@ color: #404bbf;
     letter-spacing: 0.02em;
     color: #fff;
     text-align: center;
+    margin-bottom: 48px;
 }
 
-.section-hero{
-background: #2e2f42;
+.section-hero {
+    height: 600px;
+    background: #2e2f42;
+    box-sizing: content-box;
 }
 
-.button{
+.button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -100,8 +178,11 @@ background: #2e2f42;
     letter-spacing: 0.04em;
     background: #2e2f42;
     color: #fff;
-    cursor: pointer;
     background-color: #4D5AE5;
+    border-radius: 4px;
+    border: none;
+    margin: 0, auto;
+    display: block;
 }
 
 .button:hover,
@@ -112,7 +193,32 @@ background: #2e2f42;
 
 
 
-.section-title{
+/* <!-- Sektion-2 --> */
+
+.section-benefits {
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.benefits-menu {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -120,6 +226,7 @@ background: #2e2f42;
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
+    padding-top: 120px;
 }
 
 .benefits-list-title{
@@ -140,26 +247,54 @@ background: #2e2f42;
 
 
 
-.section-team{
+/* <!-- Sektion-3--> */
+
+.section-team {
+    display: flex;
+    max-width: 100%;
+    height: 732px;
     background-color: #F4F4FD;
 }
 
-.section-title{
+
+.section-title {
     font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        text-align: center;
-        text-transform: capitalize;
-} 
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
 
 .team-list-item{
     background-color: #FFFFFF;
 }
 
-.team-list{
+.team-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+}
 
+
+
+
+/* <!-- Sektion-4--> */
+
+.Portfolio {
+    display: flex;
+
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .sections-list-title{
@@ -185,34 +320,44 @@ background: #2e2f42;
 
 
 
-.footer{
+.footer {
+
     background: #2e2f42;
+    max-width: 100%;
+    height: 312px;
 }
 
-.footer-logo{
+.footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
 }
 
-.partlogo-studio-footer{
-        font-family: Raleway, sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #f4f4fd;
+.partlogo-studio-footer {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
 }
 
-.footer-text{
+.footer-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+}
+
+.footer-content {
+    max-width: 264px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
