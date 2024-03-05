@@ -50,7 +50,11 @@ style {
 /* <!-- heder --> */
 
 .page-header{
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
+border-bottom: 1px solid #e7e9fc;
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
 }
 
 .logo{
@@ -84,6 +88,7 @@ font-family: "Raleway", sans-serif;
 .menu {
     align-items: center;
     display: flex;
+    padding: 24px 0;
 }
 
 .menu-nav {
@@ -96,7 +101,7 @@ font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding: 24px 0
+    
 }
 
 
@@ -159,6 +164,7 @@ color: #404bbf;
     color: #fff;
     text-align: center;
     margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .section-hero {
@@ -166,8 +172,7 @@ color: #404bbf;
     background: #2e2f42;
     box-sizing: content-box;
     padding: 188px 0;
-max-width: 496px;
-    
+    padding: 188px 0;
 
 }
 
@@ -186,7 +191,7 @@ max-width: 496px;
     display: block;
     min-width: 169px;
     height: 56px;
-
+    cursor: pointer;
 
 }
 
@@ -246,9 +251,6 @@ max-width: 496px;
 margin-bottom: 8px;
 }
 
-.benefits-item:first-child{ 
-    calc((100% - 72px) / 4);
-}
 
 .benefits-list-tekst{
     font-weight: 400;
@@ -267,8 +269,26 @@ margin-bottom: 8px;
     max-width: 100%;
     height: 732px;
     background-color: #F4F4FD;
-    padding: 120px 0.;
+    padding: 120px 0;
+    
 }
+
+.team-conten{
+    padding: 32px 0;
+}
+
+
+.sections-list-title{
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.sections-list-text{
+    text-align: center;
+}
+
+
 
 .team-list-icon{
     border-radius: 0px 0px 4px 4px;
@@ -305,14 +325,26 @@ margin-bottom: 8px;
 
 .Portfolio {
     display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
 }
+
+
+.portfolio-content{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     padding-bottom: 120px;
+    row-gap: 48px;
 }
 
 .sections-list-title{
@@ -321,6 +353,8 @@ margin-bottom: 8px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+
 }
 
 .sections-list-text{
@@ -343,6 +377,7 @@ margin-bottom: 8px;
     background: #2e2f42;
     max-width: 100%;
     height: 312px;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -353,6 +388,8 @@ margin-bottom: 8px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .partlogo-studio-footer {
@@ -371,6 +408,7 @@ margin-bottom: 8px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
 
 .footer-content {
