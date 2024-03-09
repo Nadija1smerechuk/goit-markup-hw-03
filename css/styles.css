@@ -32,6 +32,7 @@ ul {
 img {
     display: block;
     max-width: 100%;
+    height: auto
 }
 
 .container {
@@ -53,6 +54,7 @@ img {
     text-decoration: none;
     height: 72px;
     border-bottom: 1px solid #E7E9FC;
+    
 }
 .header-container {
     display: flex;
@@ -121,10 +123,6 @@ display: block;
     
 }
 
-.address-link{
-    display: flex;
-    gap: 40px;
-}
 
 .address-link:hover,
 .address-link:focus{
@@ -139,9 +137,7 @@ color: #404bbf;
 }
 
 .address-link {
-    background: #fff;
     color: #434455;
-    margin-right: 40px;
     text-decoration: none;
 }
 
